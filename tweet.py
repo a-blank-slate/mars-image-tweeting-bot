@@ -5,12 +5,13 @@ import datetime
 import time
 import schedule
 from random import randint
+from os import environ
 
-CONSUMER_KEY = '******************'
-CONSUMER_SECRET = '******************'
-ACCESS_KEY = '******************'
-ACCESS_SECRET = '******************'
-API_KEY = '******************'
+CONSUMER_KEY = environ['CONSUMER_KEY']
+CONSUMER_SECRET = environ['CONSUMER_SECRET']
+ACCESS_KEY = environ['ACCESS_KEY']
+ACCESS_SECRET = environ['ACCESS_SECRET']
+API_KEY = environ['API_KEY']
 
 print ("Hello Making the connection with twitter!!")
 
