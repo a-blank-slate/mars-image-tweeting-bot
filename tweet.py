@@ -61,7 +61,7 @@ def get_random_image_from_nasa():
         print("Unable to find image from NASA")
 
 
-schedule.every().minute.do(get_random_image_from_nasa)
+schedule.every().hour.do(get_random_image_from_nasa)
 
 while True:
     schedule.run_pending()
