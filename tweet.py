@@ -45,7 +45,7 @@ def get_random_image_from_nasa():
                                  now.hour, now.minute, now.second)
     print(date_in_string)
     random_number = randint(100, 999)
-    url ="https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=" + `random_number` +"&api_key=" + API_KEY
+    url ="https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=" + repr(random_number) + "&api_key=" + API_KEY
     print("hitting NASA API with this URL :: " + url)
     request = requests.get(url)
     if request.status_code == 200:
